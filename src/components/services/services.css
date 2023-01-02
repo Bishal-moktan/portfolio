@@ -8,7 +8,7 @@
     background: var(--color-bg-variant);
     border-radius: 0 0 2rem 2rem;
     border: 1px solid var(--color-primary);
-    /* height: fit-content; */
+    height: fit-content;
     transition: var(--transition);
 }
 
@@ -57,6 +57,7 @@
 @media screen and (max-width: 1024px) {
     .services__container{
         grid-template-columns: 1fr 1fr;
+        height: fit-content;
         gap: 2rem;
     }
 

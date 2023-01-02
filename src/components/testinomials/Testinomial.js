@@ -5,7 +5,7 @@ import client3 from "../../assets/avatar3.jpg"
 import client4 from "../../assets/avatar4.jpg"
 
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -44,7 +44,7 @@ const Testinomial = () => {
       <h2>Testinomials</h2>
 
       <Swiper className="container testinomials__container"
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[Navigation, Pagination]}
       spaceBetween={40}
       slidesPerView={1}
       navigation

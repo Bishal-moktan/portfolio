@@ -60,6 +60,7 @@ input,textarea{
 @media screen and (max-width: 1024px) {
      .container.contact__container{
         grid-template-columns: 1fr;
+        height: fit-content;
         gap: 2rem;
      }
 }
