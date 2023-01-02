@@ -8,6 +8,7 @@ import Contact from "./components/contact/Contact"
 import Testinomial from "./components/testinomials/Testinomial"
 import Footer from "./components/footer/Footer"
 import { ToastContainer } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   return (
@@ -16,12 +17,12 @@ function App() {
     <Navbar />
     <About />
     <Experience />
-    <Services />
+    {/* <Services /> */}
     <Portfolio />
-    <Testinomial />
-    <Contact />
+    {/* <Testinomial /> */}
+    {/* <Contact /> */}
     <Footer />
-    <ToastContainer />
+    <ToastContainer position="top-center" autoClose={1500}/>
     </>
   );
 }

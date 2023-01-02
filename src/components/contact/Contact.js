@@ -13,14 +13,16 @@ const Contact = () => {
   const form = useRef()
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_jyzy6n3', 'service_jyzy6n3', form.current, 'ZvEiFnvknD90YqN-o')
+    emailjs.sendForm('service_quoclke', 'template_7rxo30q', form.current, 'ZvEiFnvknD90YqN-o')
       .then((result) => {
+        toast.success("Successfully sent!")
           console.log(result.text);
-          toast.success(result.text)
+          
       }, (error) => {
+        toast.error(error.text)
           console.log(error.text);
-          toast.error(error.text)
       });
+      e.target.reset()
   };
   const contactOptions = [
     {
@@ -59,7 +61,7 @@ const Contact = () => {
           </article>
         })}
         </div>
-        <form ref={form} onClick={sendEmail}>
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message"rows="7" placeholder="Your MEssage" required></textarea>
