@@ -17,10 +17,10 @@ function App() {
     <Navbar />
     <About />
     <Experience />
-    {/* <Services /> */}
+    <Services />
     <Portfolio />
-    {/* <Testinomial /> */}
-    {/* <Contact /> */}
+    <Testinomial />
+    <Contact />
     <Footer />
     <ToastContainer position="top-center" autoClose={1500}/>
     </>
