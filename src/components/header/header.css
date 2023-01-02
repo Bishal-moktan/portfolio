@@ -1,0 +1,85 @@
+header{
+    height: 100vh;
+    padding-top: 4rem;
+    overflow: hidden;
+}
+
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* ================= CTA ======================  */
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* =================== HEADER SOCIALS =================  */
+
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+}
+
+.header__socials::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background-color: var(--color-primary);
+}
+
+/* ======================= me ==================  */
+
+.me{
+    width: 22rem;
+    background: linear-gradient(var(--color-primary), transparent);
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 2rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+}
+
+
+/* ===================== SCROLL DOWN ====================  */
+
+.scroll__down{
+    position: absolute;
+    bottom: 5rem;
+    right: -2.3rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+
+/* ================ MEDIA QUERY FOR MEDIUM =================  */
+
+@media screen and (max-width: 1024px) {
+    .container{
+        height: 68vh;
+    }
+}
+
+/* ================ MEDIA QUERY FOR SMALL =================  */
+
+@media screen and (max-width: 600px) {
+    .container{
+        height: 100vh;
+    }
+
+    .scroll__down, .header__socials{
+        display: none;
+    }
+}
